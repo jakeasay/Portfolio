@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[50]:
-
-
 from matplotlib import pyplot as plt
 import pandas as pd
 import seaborn as sns
