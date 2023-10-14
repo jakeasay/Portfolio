@@ -1,23 +1,9 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[89]:
-
-
 import csv
 import pandas as pd
-
-
-# In[206]:
-
 
 data = pd.read_csv(r'/Users/jakeasay/Downloads/insurance.csv')
 df = pd.DataFrame(data)
 df.head()
-
-
-# In[207]:
-
 
 def analyze_ages():
     total_age = df.age.mean()
@@ -49,27 +35,11 @@ def average_charges():
     return ("Average Yearly Medical Insurance Charges: " +  
         str(round(total_charges/len(df.charges), 2)) + " dollars.")
 
-
-# In[208]:
-
-
 analyze_ages()
-
-
-# In[209]:
-
 
 analyze_sexes()
 
-
-# In[210]:
-
-
 unique_regions()
-
-
-# In[211]:
-
 
 average_charges()
 
